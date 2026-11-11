@@ -19,7 +19,7 @@ h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:0 0 12px}h1 span{col
 .ad{width:100%;border-radius:18px;box-shadow:0 10px 30px rgba(11,31,68,.18);display:block}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:24px 0}
 .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 4px 14px rgba(11,31,68,.08)}
-.card b{display:block;font-size:1.1rem;margin:8px 0 6px}.card p{margin:0;color:#4a5874}
+.card b{display:block;font-size:1.1rem;margin:8px 0 6px}.card p{margin:0;color:#4a5874}.card.wide{grid-column:1/-1}
 .check{width:38px;height:38px;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
 .steps{background:#fff;border-radius:16px;padding:24px;margin:24px 0}
 .steps ol{margin:8px 0 0;padding-left:22px;line-height:1.9;font-size:1.05rem}
@@ -32,7 +32,7 @@ footer{text-align:center;color:#6b7690;font-size:.85rem;padding:16px 0 32px}
 <header>
  <div>
   <h1>Turn Your Business Into a <span>Delivery Hub</span></h1>
-  <div class="earn">Earn <b>$20,000–$30,000</b> a year in part-time income for your business*</div>
+  <div class="earn">Earn <b>$20,000–$30,000</b> a year in part-time income for your business*<br><span style="font-size:.85em">Plus training on how to run an efficient, successful Hub</span></div>
   <p class="lead">Utah County business owners: earn extra income delivering packages in your neighborhood.</p>
   <a class="btn" href="https://hub-delivery.amazon/?storeId=6718529654">Sign Up Now &rsaquo;</a>
  </div>
@@ -43,6 +43,7 @@ footer{text-align:center;color:#6b7690;font-size:.85rem;padding:16px 0 32px}
  <div class="card"><div class="check">&#10003;</div><b>Packages come to you</b><p>Packages are delivered right to your place of business.</p></div>
  <div class="card"><div class="check">&#10003;</div><b>On your schedule</b><p>Deliveries arrive on a schedule you agree on.</p></div>
  <div class="card"><div class="check">&#10003;</div><b>Serve your neighbors</b><p>Deliver to customers close to your store and add a new income stream.</p></div>
+ <div class="card wide"><div class="check">&#9733;</div><b>Training included</b><p>Get trained on how to run an efficient and successful Hub, so you can start with confidence.</p></div>
 </section>
 <section class="steps"><h2 style="margin:0">How to get started</h2><ol>
  <li>Tap <b>Sign Up Now</b>.</li><li>Fill out the online application for the Amazon Hub Delivery program.</li><li>Agree on a delivery schedule and start earning.</li></ol></section>
