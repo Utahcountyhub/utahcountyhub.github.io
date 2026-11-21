@@ -19,26 +19,33 @@
 <meta name="twitter:description" content="Utah County business owners: earn $20,000–$30,000 a year in part-time income. Training included. Sign up online.">
 <meta name="twitter:image" content="https://utahcountyhub.github.io/og-image.jpg">
 <style>
-:root{--navy:#0B1F44;--orange:#F47B20}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--navy);background:#f5f7fb}
+:root{--navy:#0B1F44;--orange:#F47B20;--bg:#F5F7FB;--border:#CFD8EA;--text:#33415C;--muted:#4A5874;--faint:#6B7690}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--navy);background:var(--bg)}
 .wrap{max-width:1040px;margin:0 auto;padding:24px}
 header{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center;padding:24px 0}
 h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:0 0 12px}h1 span{color:var(--orange)}
 .earn{display:inline-block;background:var(--orange);color:#fff;font-weight:700;font-size:1.15rem;padding:10px 18px;border-radius:12px;margin:0 0 14px}.earn b{font-size:1.35rem}
-.lead{font-size:1.2rem;margin:0 0 24px;color:#33415c}
+.lead{font-size:1.2rem;margin:0 0 18px;color:var(--text)}
 .btn{display:inline-block;background:var(--orange);color:var(--navy);font-weight:800;font-size:1.25rem;padding:16px 34px;border-radius:999px;text-decoration:none;box-shadow:0 6px 18px rgba(244,123,32,.35);transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
 .ad{width:100%;border-radius:18px;box-shadow:0 10px 30px rgba(11,31,68,.18);display:block}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:24px 0}
 .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 4px 14px rgba(11,31,68,.08)}
-.card b{display:block;font-size:1.1rem;margin:8px 0 6px}.card p{margin:0;color:#4a5874}.card.wide{grid-column:1/-1}
+.card b{display:block;font-size:1.1rem;margin:8px 0 6px}.card p{margin:0;color:var(--muted)}.card.wide{grid-column:1/-1}
 .check{width:38px;height:38px;border-radius:50%;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
 .steps{background:#fff;border-radius:16px;padding:24px;margin:24px 0}
 .steps ol{margin:8px 0 0;padding-left:22px;line-height:1.9;font-size:1.05rem}
-.cta{background:var(--navy);color:#fff;border-radius:20px;padding:32px;display:flex;gap:28px;align-items:center;justify-content:space-between;margin:32px 0}
+.cta{background:var(--navy);color:#fff;border-radius:20px;padding:32px;display:flex;gap:28px;align-items:center;justify-content:space-between;margin:12px 0 32px}
 .cta h2{margin:0 0 8px;font-size:1.8rem}.cta p{margin:0 0 18px;color:#cfd8ea}
 .cta img{width:150px;height:150px;background:#fff;border-radius:12px;padding:6px}
-footer{text-align:center;color:#6b7690;font-size:.85rem;padding:16px 0 32px}
+footer{text-align:center;color:var(--faint);font-size:.85rem;padding:16px 0 32px}
+.step1{background:#fff;border:1px solid var(--border);border-left:6px solid var(--orange);border-radius:16px;padding:16px 18px;margin:0 0 18px;box-shadow:0 4px 14px rgba(11,31,68,.08);text-align:left}
+.step1-tag{display:inline-block;background:var(--navy);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:0 0 8px}
+.step1 h3{margin:0 0 8px;font-size:1.12rem;line-height:1.3;color:var(--navy);font-weight:800}
+.step1 p{margin:0;color:var(--text);font-size:.98rem;line-height:1.5}
+.btn-wrap{margin:0}
+.btn-wrap .step2-label{display:block;font-weight:800;font-size:.95rem;color:var(--navy);margin:0 0 8px}
+.cta-wrap .step1{margin:24px 0 0}
 @media(max-width:760px){header{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.cta{flex-direction:column;text-align:center}}
 </style></head><body><div class="wrap">
 <header>
@@ -46,9 +53,17 @@ footer{text-align:center;color:#6b7690;font-size:.85rem;padding:16px 0 32px}
   <h1>Turn Your Business Into a <span>Delivery Hub</span></h1>
   <div class="earn">Earn <b>$20,000–$30,000</b> a year in part-time income for your business*<br><span style="font-size:.85em">Plus training on how to run an efficient, successful Hub</span></div>
   <p class="lead">Utah County business owners: earn extra income delivering packages in your neighborhood.</p>
-  <a class="btn" href="https://hub-delivery.amazon/?storeId=6718529654">Sign Up Now &rsaquo;</a>
+  <div class="step1">
+   <div class="step1-tag">Required before you apply</div>
+   <h3>Step 1: Start fresh with a new Amazon account</h3>
+   <p>Before you apply, create a brand-new email address and use it to open a brand-new Amazon account — one that’s never been linked to Amazon before. Think of it as your Hub’s own business account, separate from your personal shopping. Do this first, then use that new account when you sign up below.</p>
+  </div>
+  <div class="btn-wrap">
+   <span class="step2-label">Step 2: Sign up with your new account</span>
+   <a class="btn" href="https://hub-delivery.amazon/?storeId=6718529654">Sign Up Now &rsaquo;</a>
+  </div>
  </div>
- <a href="https://hub-delivery.amazon/?storeId=6718529654"><img class="ad" src="ad-female.jpg" alt="Turn your business into a delivery hub"></a>
+ <img class="ad" src="ad-female.jpg" alt="Turn your business into a delivery hub">
 </header>
 <section class="cards">
  <div class="card"><div class="check">$</div><b>$20K–$30K part-time income*</b><p>A new revenue stream that works alongside your existing business.</p></div>
@@ -58,9 +73,21 @@ footer{text-align:center;color:#6b7690;font-size:.85rem;padding:16px 0 32px}
  <div class="card wide"><div class="check">&#9733;</div><b>Training included</b><p>Get trained on how to run an efficient and successful Hub, so you can start with confidence.</p></div>
 </section>
 <section class="steps"><h2 style="margin:0">How to get started</h2><ol>
- <li>Tap <b>Sign Up Now</b>.</li><li>Fill out the online application for the Amazon Hub Delivery program.</li><li>Agree on a delivery schedule and start earning.</li></ol></section>
-<section class="cta"><div><h2>Ready to get started?</h2><p>Sign up online, or scan the code with your phone.</p>
- <a class="btn" href="https://hub-delivery.amazon/?storeId=6718529654">Sign Up Now &rsaquo;</a></div>
- <a href="https://hub-delivery.amazon/?storeId=6718529654"><img src="qr.png" alt="QR code to sign up"></a></section>
+ <li><b>Start fresh with a new Amazon account.</b> Create a brand-new email address and use it to open a brand-new Amazon account — one that’s never been linked to Amazon before. This is required before you apply.</li>
+ <li><b>Sign up with your new account.</b> Stay signed in to that new account, tap <b>Sign Up Now</b>, and fill out the online application.</li>
+ <li><b>Agree on a schedule and start earning.</b> Once you’re approved, packages come to your business on a schedule you agree on.</li>
+</ol></section>
+<div class="cta-wrap">
+ <div class="step1">
+  <div class="step1-tag">Required before you apply</div>
+  <h3>Step 1: Start fresh with a new Amazon account</h3>
+  <p>Before you apply, create a brand-new email address and use it to open a brand-new Amazon account — one that’s never been linked to Amazon before. Think of it as your Hub’s own business account, separate from your personal shopping. Do this first, then use that new account when you sign up below.</p>
+ </div>
+ <section class="cta"><div>
+  <h2>Step 2: Sign up with your new account</h2>
+  <p>Use the new Amazon account you just created, then sign up online or scan the code with your phone.</p>
+  <a class="btn" href="https://hub-delivery.amazon/?storeId=6718529654">Sign Up Now &rsaquo;</a></div>
+  <a href="https://hub-delivery.amazon/?storeId=6718529654"><img src="qr.png" alt="QR code to sign up"></a></section>
+</div>
 <footer>*Earnings vary based on package volume, delivery area, and schedule. Shared by an independent Amazon Hub Delivery provider. Not an official Amazon website.</footer>
 </div></body></html>
